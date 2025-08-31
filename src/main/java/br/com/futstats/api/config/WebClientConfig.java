@@ -8,7 +8,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Configuration
 public class WebClientConfig {
 
-    @Value("${api.football.key}")
+    @Value("${api.football.key:${API_FOOTBALL_KEY}}")
     private String apiKey;
 
     @Bean

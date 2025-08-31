@@ -45,3 +45,5 @@ jobs:
       # Se qualquer teste falhar, este passo falhará e o pipeline ficará vermelho.
       - name: Build and test with Maven
         run: mvn -B package --file pom.xml
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
