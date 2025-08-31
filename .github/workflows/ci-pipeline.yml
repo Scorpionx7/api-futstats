@@ -47,3 +47,4 @@ jobs:
         run: mvn -B package --file pom.xml
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
